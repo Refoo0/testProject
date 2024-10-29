@@ -8,5 +8,6 @@ jobs:
         uses: l3montree-dev/devguard-action/.github/workflows/devguard-full.yml@main
         with:
             asset-name: "l3montree-cybersecurity/projects/github-actions-test-project/assets/github-actions-project"
+            scan-type: "full"
         secrets:
             devguard-token: ${{ secrets.DEVGUARD_TOKEN }}    
