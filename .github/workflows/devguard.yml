@@ -1,0 +1,11 @@
+name: Call devguard workflow
+
+on:
+  push
+
+jobs:
+    call-workflow-full:
+        uses: l3montree-dev/devguard-action/blob/main/.github/workflows/devguard-full.yml@main
+        with:
+            devguard-token: ${{ secrets.GITHUB_TOKEN }}
+            asset-name: "l3montree-cybersecurity/projects/github-actions-test-project/assets/github-actions-project"
