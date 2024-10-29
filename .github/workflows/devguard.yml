@@ -7,5 +7,5 @@ jobs:
     call-workflow-full:
         uses: l3montree-dev/devguard-action/.github/workflows/devguard-full.yml@main
         with:
-            devguard-token: ${{ secrets.GITHUB_TOKEN }}
+            devguard-token: ${{ secrets.DEVGUARD_TOKEN }}
             asset-name: "l3montree-cybersecurity/projects/github-actions-test-project/assets/github-actions-project"
