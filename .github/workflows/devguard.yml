@@ -4,6 +4,13 @@ on:
   push
 
 jobs:
+    call-workflow-old:
+        uses: l3montree-dev/devguard-action/.github/workflows/full.yml@main
+        with:
+            asset-name: "l3montree-cybersecurity/projects/github-actions-test-project/assets/github-actions-project"
+        secrets:
+            devguard-token: ${{ secrets.DEVGUARD_TOKEN }}   
+            
     call-workflow-full:
         uses: l3montree-dev/devguard-action/.github/workflows/full.yml@main
         with:
