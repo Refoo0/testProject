@@ -11,10 +11,4 @@ jobs:
             asset-name: "l3montree-cybersecurity/projects/github-actions-test-project/assets/github-actions-project"
         secrets:
             devguard-token: ${{ secrets.DEVGUARD_TOKEN }}
-    call-workflow-sca:
-        uses: l3montree-dev/devguard-action/.github/workflows/software-composition-analysis.yml@main
-        with:
-            asset-name: "l3montree-cybersecurity/projects/github-actions-test-project/assets/github-actions-project"
-        secrets:
-            devguard-token: ${{ secrets.DEVGUARD_TOKEN }}   
 
