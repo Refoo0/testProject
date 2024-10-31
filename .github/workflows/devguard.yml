@@ -5,7 +5,7 @@ on:
 
 jobs:
     call-workflow-full:
-        uses: l3montree-dev/devguard-action/.github/workflows/devguard-workflow.yml@main
+        uses: l3montree-dev/devguard-action/.github/workflows/full.yml@main
         with:
             asset-name: "l3montree-cybersecurity/projects/github-actions-test-project/assets/github-actions-project"
             scan-type: "full"
